@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     const teams = [
-        { name: 'Strada BoyZ', image: 'teamElias.png' },
-        { name: 'Equipo 2', image: 'team2.jpg' },
-        { name: 'Equipo 3', image: 'team3.jpg' },
-        { name: 'Equipo 4', image: 'team4.jpg' },
-        { name: 'Equipo 5', image: 'team5.jpg' },
-        { name: 'Equipo 6', image: 'team6.jpg' }
+        { name: 'Elias Mouimi', image: 'teamelias.jpeg' },
+        { name: 'Oscar Carrillo', image: 'teamoscar.jpeg' },
+        { name: 'Luis Roca', image: 'teamroca.jpeg' },
+        { name: 'Arturo', image: 'teamarturo.jpeg' },
+        { name: 'Fernando', image: 'teamfer.jpeg' },
+        { name: 'Edu Perez', image: 'teamedu.jpeg' }
     ];
 
     const picks = shuffleArray([...teams]);
@@ -65,7 +65,7 @@ function displayResults(picks, serpentineOrder) {
                     setTimeout(() => {
                         resultDiv.removeChild(pickDiv); // Eliminar el pick después de la transición
                         showNextPick(); // Mostrar el siguiente pick
-                    }, 500);
+                    }, 1000);
                 }, 3000);
             }, 100);
         } else {
@@ -87,7 +87,7 @@ function displaySerpentineOrder(serpentineOrder) {
         const teamDiv = document.createElement('div');
         teamDiv.classList.add('team');
         teamDiv.innerHTML = `
-            <p class="pickenter"><span class="numpic">Pick #${index + 1}:</span> ${team.name}</p>
+            <p class="pickenter"><span class="numpic">Pick #${index + 1 + 6}:</span> ${team.name}</p>
         `;
         serpentineDiv.appendChild(teamDiv);
     });
