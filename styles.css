@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('Logomix.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+.pick {
+    display: inline-block;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.795);
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.pick.show {
+    opacity: 1;
+}
+
+.pick.hide {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.pick img {
+    max-width: 100%;
+}
+
+.team {
+    margin-top: 20px;
+}
+
+.serpetineOrder {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    background-color: rgba(255, 255, 255, 0.795);
+    border-radius: 25px;
+    padding: 10px;
+    
+}
+
+.serpetineOrder .team {
+    text-align: center;
+    margin: 10px;
+}
+
+.serpetineOrder img {
+    max-width: 100%;
+}
+.numpic{
+    background-color: brown;
+    padding: 20px;
+    border-radius: 20px;
+}
